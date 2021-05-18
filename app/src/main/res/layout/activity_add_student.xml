@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E1DADA"
+    tools:context=".AddStudentActivity">
+
+
+    <LinearLayout
+        android:paddingBottom="15dp"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textColor="#03A9F4"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:id="@+id/edt_add_name"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Nguyen Quang Anh" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                android:textColor="#03A9F4"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edt_add_age"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/edittext"
+                android:hint="22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender: "
+                android:textColor="#03A9F4"
+                android:textSize="18dp" />
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_add_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark: "
+                android:textColor="#03A9F4"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edt_add_mark"
+                android:layout_marginLeft="10dp"
+                android:layout_width="240dp"
+                android:background="@drawable/edittext"
+                android:layout_height="wrap_content"
+                android:hint="5.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textColor="#03A9F4"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edt_add_date"
+                android:layout_marginLeft="13dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_getDate"
+            android:layout_width="240dp"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="@color/black"
+            android:text="GET DATE"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_add_student"
+            android:layout_marginLeft="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ADD STUDENT"
+            android:backgroundTint="#03A9F4"/>
+
+        <Button
+            android:id="@+id/btn_cancel_addStudent"
+            android:layout_marginLeft="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFEFEF"
+            android:textColor="@color/black"
+            android:text="CANCEL"/>
+    </LinearLayout>
+</LinearLayout>
